@@ -1,12 +1,19 @@
 .side-nav {
-  color: blue;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-wrap: wrap; 
-  border-right: 1px solid #D7DBDD;
-  font-family: raleway;
-  display: flex;
-  width: 100%;
+  width: 15%;
+  height: 100%;
   align-items: stretch;
-  background: #34495e 
+  background: #d3d3d3;
+  position: fixed;
+  overflow-x: hidden;
+  z-index: 1;
+}
+
+.side-nav > * {
+  display: inline-block;
+  /* margin: 20px; */
+}
+
+li {
+  margin: 10px;
+  display: inline-block;
 }

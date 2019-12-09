@@ -2,15 +2,23 @@ import React, { useEffect, useState } from 'react';
 import ColorSwatch from '../ColorSwatch';
 
 
-function ListView() {
+function DetailView(props) {
 
-  let randomColor = [{color: 'blue', hex: '0000FF'}];
+  // if coming from random
+  function selectRandomColor() {
+    const randomIndex = Math.floor(Math.random() * props.colors.length);
+    return props.colors[randomIndex];
+  }
+  const selectedColor = [selectRandomColor()];
+
+
+  // if coming from selecting color then display color
+  
   return (
     <div>
-      <p>this is the Details view </p>
-      <ColorSwatch currentColors={randomColor}/>
+      <ColorSwatch currentColors={selectedColor} colorSwatchSize='400px'/>
     </div>
   );
 }
 
-export default ListView;
+export default DetailView;

@@ -6,7 +6,7 @@ const ColorSwatch = (props) => {
   return (
     <div class="container">
         {props.currentColors.map(color => 
-          <div class="swatches">
+          <div class="swatches" style={{width: props.colorSwatchSize, height: props.colorSwatchSize}}>
             <div class="color-display" style={{backgroundColor: `#${color.hex}`}}>
               {color.hex}
             </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './side-nav.css'
 
-const TopNav = (props) => {
+const SideNav = (props) => {
 
   return (
     <div class="side-nav">
@@ -21,4 +21,4 @@ const TopNav = (props) => {
   )
 }
 
-export default TopNav;
+export default SideNav;
