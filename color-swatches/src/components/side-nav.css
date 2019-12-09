@@ -1,0 +1,12 @@
+.side-nav {
+  color: blue;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  border-right: 1px solid #D7DBDD;
+  font-family: raleway;
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  background: #34495e 
+}

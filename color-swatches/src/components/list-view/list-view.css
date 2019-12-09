@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: auto;
+}
+
+.swatches {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  border-color: gray;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  margin: 2%;
+}
+
+.color-display {
+  height: 80%;
+  width: 100%;
+}
+
+.color-name {
+  display: block;
+}
