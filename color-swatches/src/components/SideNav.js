@@ -7,7 +7,7 @@ const SideNav = (props) => {
   return (
     <div className="side-nav">
       <ul id="side-nav-list">
-        <Link id="random-color-button" to="/details">Random Color</Link>
+        <Link to={{ pathname: "/details", state: { comingFromSelected: false}}} id="random-color-button">Random Color</Link>
         <li>Red</li>
         <li>Orange</li>
         <li>Yellow</li>

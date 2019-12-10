@@ -18,7 +18,7 @@ function ListView(props) {
 
   return (
     <div>
-      <ColorSwatch 
+      <ColorSwatch
       currentColors={currentColors}
       />
       <Pagination 
