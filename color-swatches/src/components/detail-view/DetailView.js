@@ -10,7 +10,7 @@ function DetailView(props) {
     return props.colors[randomIndex];
   }
   const selectedColor = [selectRandomColor()];
-
+  
 
   // if coming from selecting color then display color
   
