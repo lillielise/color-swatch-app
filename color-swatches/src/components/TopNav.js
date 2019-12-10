@@ -5,7 +5,7 @@ import './top-nav.css'
 const TopNav = (props) => {
 
   return (
-    <div className="top-nav">
+    <div class="top-nav">
       <Logo />
       <input type="text" placeholder="Search"></input>
     </div>
