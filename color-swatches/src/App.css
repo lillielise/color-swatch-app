@@ -1,0 +1,10 @@
+body {
+  font-family: 'Source Serif Pro', serif;
+}
+
+#main-container {
+  display: grid; 
+  grid-template-columns: 15% auto; 
+  grid-template-rows: 7% auto;
+  min-height: 100vh; 
+}
