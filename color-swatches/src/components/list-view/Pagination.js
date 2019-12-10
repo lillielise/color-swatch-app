@@ -11,12 +11,10 @@ const Pagination = (props) => {
 
   return (
     <nav>
-      <ul>
+      <ul id="page-numbers">
         {pageNumbers.map(number => (
-          <li key={number}>
-            <p onClick={() => props.paginate(number)}>
-              {number}
-            </p> 
+          <li class="page-number" key={number} onClick={() => props.paginate(number)}>
+              {number} 
           </li>
         ))}
       </ul>

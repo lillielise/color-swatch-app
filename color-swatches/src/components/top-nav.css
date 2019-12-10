@@ -1,4 +1,9 @@
 .top-nav {
   background-color:#3c3c3c;
-  height: 100px;
+  grid-row: 1;
+  grid-column: 1/3;
+}
+
+input {
+  float: right;
 }

@@ -114,18 +114,16 @@ function App() {
   
   
   return (
-    <React.Fragment>
+    <div id="main-container">
       <BrowserRouter>
         <TopNav />
         <SideNav />
         <Switch>
-          {/* <Route exact path="/details" component={DetailsView} colors={colors} /> */}
-          {/* <Route exact path="/details" render={(routeProps) => (<DetailsView {...routeProps} colors={colors}/>)} /> */}
           <Route exact path="/" component={ListView}/>
           <Route exact path="/details" render={(props) => <DetailsView {...props} colors={colors}/>} />
         </Switch>
       </BrowserRouter>
-    </React.Fragment>
+    </div>
   );
 }
 

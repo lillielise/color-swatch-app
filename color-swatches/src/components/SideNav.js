@@ -6,8 +6,8 @@ const SideNav = (props) => {
 
   return (
     <div class="side-nav">
-      <ul>
-        <Link to="/details">Random Color</Link>
+      <ul id="side-nav-list">
+        <Link id="random-color-button" to="/details">Random Color</Link>
         <li>Red</li>
         <li>Orange</li>
         <li>Yellow</li>
