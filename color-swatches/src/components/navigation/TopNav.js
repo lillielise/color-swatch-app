@@ -5,7 +5,7 @@ import './top-nav.css'
 const TopNav = (props) => {
 
   return (
-    <div class="top-nav">
+    <div className="top-nav">
       <Logo id="logo" />
     </div>
   )

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import DetailsView from './components/detail-view/DetailView';
-import TopNav from './components/TopNav';
-import SideNav from './components/SideNav';
+import TopNav from './components/navigation/TopNav';
+import SideNav from './components/navigation/SideNav';
 import './App.css';
 import ListView from './components/list-view/ListView';
 
@@ -24,11 +24,7 @@ function App() {
     return colorsArray;
   }
 
-
   const [colors] = useState(generateHexColors());
-
-
-  console.log(colors)
   
   return (
     <div id="main-container">

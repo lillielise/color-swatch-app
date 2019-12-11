@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import Pagination from './Pagination';
-import ColorSwatch from '../ColorSwatch';
-import './list-view.css';
+import Pagination from '../pagination/Pagination';
+import ColorSwatch from '../color-swatch/ColorSwatch';
 
 function ListView(props) {
 

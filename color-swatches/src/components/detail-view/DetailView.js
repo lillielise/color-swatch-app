@@ -1,5 +1,5 @@
 import React from 'react';
-import ColorSwatch from '../ColorSwatch';
+import ColorSwatch from '../color-swatch/ColorSwatch';
 
 
 function DetailView(props) {
