@@ -16,7 +16,7 @@ const Pagination = (props) => {
     <nav>
       <ul id="page-numbers">
         {pageNumbers.map(number => (
-          <li id={number} style={{'fontWeight': pageNumberSelected === number ? 'bold' : 'normal'}} className="page-number" key={number} onClick={() => {props.paginate(number); setPageNumberSelected(number)}}>
+          <li id={number} style={{'fontWeight': pageNumberSelected === number ? 'bold' : 'normal', 'text-decoration': pageNumberSelected === number ? 'underline' : 'none'}} className="page-number" key={number} onClick={() => {props.paginate(number); setPageNumberSelected(number)}}>
               {number} 
           </li>
         ))}

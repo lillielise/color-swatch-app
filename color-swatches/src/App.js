@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import DetailsView from './components/detail-view/DetailView';
 import TopNav from './components/TopNav';
 import SideNav from './components/SideNav';
 import './App.css';
 import ListView from './components/list-view/ListView';
-import { tsConstructorType } from '@babel/types';
-
 
 function App() {
 
@@ -15,8 +13,8 @@ function App() {
     const colorsArray = [];
     const numberOfColors = 100;
     while(colorsArray.length < numberOfColors) { 
-      let hexCode = '';
-      while(hexCode.length < 6) {
+      let hexCode = '#';
+      while(hexCode.length < 7) {
         hexCode += possibleHexValues[Math.floor(Math.random() * possibleHexValues.length)];
       }
       if(!colorsArray.includes(hexCode)){

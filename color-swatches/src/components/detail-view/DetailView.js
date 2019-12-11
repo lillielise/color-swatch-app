@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ColorSwatch from '../ColorSwatch';
-import { tsPropertySignature } from '@babel/types';
 
 
 function DetailView(props) {
@@ -15,7 +14,7 @@ function DetailView(props) {
   return (
     <div>
       <p></p>
-      <ColorSwatch currentColors={selectedColor} colorSwatchWidth='400px' colorSwatchHeight='365px'/>
+      <ColorSwatch id="swatch-detail-view" detailsView={true} currentColors={selectedColor}/>
     </div>
   );
 }

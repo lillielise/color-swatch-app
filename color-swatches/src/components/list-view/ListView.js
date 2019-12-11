@@ -6,7 +6,7 @@ import './list-view.css';
 function ListView(props) {
 
   const [currentPage, setCurrentPage] = useState(1);
-  const [colorsPerPage] = useState(12);
+  const [colorsPerPage] = useState(10);
 
   
   const indexOfLastPost = currentPage * colorsPerPage;
