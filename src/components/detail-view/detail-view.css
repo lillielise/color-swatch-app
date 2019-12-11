@@ -1,0 +1,17 @@
+#detail-view-container {
+  margin: 0;
+}
+
+#clear-button {
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  width: 50%;
+  font-weight: 550;
+  color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  margin: 2% 0 2% 40%;
+  padding: 1% 10%
+}

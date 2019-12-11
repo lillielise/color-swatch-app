@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ColorSwatch from '../color-swatch/ColorSwatch';
+import './detail-view.css';
 
 
 function DetailView(props) {
@@ -12,9 +14,9 @@ function DetailView(props) {
   }
 
   return (
-    <div>
-      <p></p>
+    <div id="detail-view-container">
       <ColorSwatch id="swatch-detail-view" detailsView={true} currentColors={selectedColor}/>
+      <Link id="clear-button" to="/">Clear</Link>
     </div>
   );
 }

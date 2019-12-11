@@ -5,7 +5,7 @@ import ColorSwatch from '../color-swatch/ColorSwatch';
 function ListView(props) {
 
   const [currentPage, setCurrentPage] = useState(1);
-  const [colorsPerPage] = useState(10);
+  const [colorsPerPage] = useState(12);
 
   const indexOfLastPost = currentPage * colorsPerPage;
   const indexOfFirstPost = indexOfLastPost - colorsPerPage;
@@ -13,7 +13,6 @@ function ListView(props) {
   
   const paginate = (pageNumber) => {
     setCurrentPage(pageNumber);
-    console.log(pageNumber);
   };
 
   return (
