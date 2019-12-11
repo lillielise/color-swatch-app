@@ -6,7 +6,7 @@ const TopNav = (props) => {
 
   return (
     <div class="top-nav">
-      <Logo />
+      <Logo id="logo" />
       <input type="text" placeholder="Search"></input>
     </div>
   )

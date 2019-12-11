@@ -14,7 +14,12 @@ function ListView(props) {
   let currentColors = props.colors.slice(indexOfFirstPost, indexOfLastPost);
   
 
-  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+  const paginate = (pageNumber) => {
+    setCurrentPage(pageNumber);
+    console.log(pageNumber);
+  };
+
+
 
   return (
     <div>

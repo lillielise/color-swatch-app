@@ -8,12 +8,13 @@ const ColorSwatch = (props) => {
   return (
     <div className="content-container">
         {props.currentColors.map(color => 
-          <div className="swatches" style={{width: props.colorSwatchSize, height: props.colorSwatchSize}}>
-          <Link to={{ pathname: "/details", state: { comingFromSelected: true, colorSelected: color}}} id="random-color-button">Random Color</Link>
+          // <div className="swatches" style={{width: props.colorSwatchSize}}>
+          <Link className="swatches" style={{width: props.colorSwatchWidth, height: props.colorSwatchHeight}} to={{ pathname: "/details", state: { comingFromSelected: true, colorSelected: color}}}>        
             <div className="color-display" style={{backgroundColor: `#${color}`}}>
             </div>
             <p className="color-name">#{color}</p>
-          </div>
+          </Link>
+          // </div>
         )}        
     </div>
   )
