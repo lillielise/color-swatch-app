@@ -10,6 +10,10 @@
 }
 
 #current-page {
- font-weight: bold;
- text-decoration: underline;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.page-number:hover {
+  cursor: pointer;
 }

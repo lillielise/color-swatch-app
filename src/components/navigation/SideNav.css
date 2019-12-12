@@ -1,6 +1,6 @@
 .side-nav {
   background: #d3d3d3;
-  box-shadow:0 0 5px #5d5d5d;
+  box-shadow: 0 0 5px #5d5d5d;
   grid-column: 1;
   grid-row: 2/3;
 }
@@ -11,7 +11,7 @@
 }
 
 #side-nav-list > * {
-  font-size: 1.3vw;;
+  font-size: 1.3vw;
   margin-top: 5%;
 }
 
@@ -20,7 +20,7 @@
 }
 
 #random-color-button {
-  background-color: white; 
+  background-color: white;
   border-style: solid;
   border-width: 1px;
   border-radius: 5px;

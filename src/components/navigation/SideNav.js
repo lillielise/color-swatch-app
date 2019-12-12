@@ -1,13 +1,17 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './side-nav.css'
+import React from 'react'
+import { Link } from 'react-router-dom'
+import './SideNav.css'
 
-const SideNav = (props) => {
-
+const SideNav = props => {
   return (
     <div className="side-nav">
       <ul id="side-nav-list">
-        <Link to={{ pathname: "/details", state: { comingFromSelected: false}}} id="random-color-button">Random Color</Link>
+        <Link
+          to={{ pathname: '/details', state: { comingFromSelected: false } }}
+          id="random-color-button"
+        >
+          Random Color
+        </Link>
         <li>Red</li>
         <li>Orange</li>
         <li>Yellow</li>
@@ -21,4 +25,4 @@ const SideNav = (props) => {
   )
 }
 
-export default SideNav;
+export default SideNav

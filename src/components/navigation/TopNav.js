@@ -1,9 +1,8 @@
-import React from 'react';
-import { ReactComponent as Logo } from '../../assets/logo-symbol.svg';
-import './top-nav.css'
+import React from 'react'
+import { ReactComponent as Logo } from '../../assets/logo-symbol.svg'
+import './TopNav.css'
 
-const TopNav = (props) => {
-
+const TopNav = props => {
   return (
     <div className="top-nav">
       <Logo id="logo" />
@@ -12,4 +11,4 @@ const TopNav = (props) => {
   )
 }
 
-export default TopNav;
+export default TopNav

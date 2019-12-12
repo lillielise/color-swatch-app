@@ -11,6 +11,7 @@
     "global-require": "off",
     "linebreak-style": "off",
     "no-multi-assign": "off",
+    "react/prop-types": 0,
     "no-param-reassign": ["error", { "props": false }],
     "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
     "no-trailing-spaces":"off",
