@@ -1,18 +1,14 @@
 # Color Swatches
 
-## Features
-
--
-
-- pagination
+## Overview
+An app that displays color swatches built with JavaScript and React.
 
 ## Deployed App
-
-[Deployed App](http://color-swatches-lg.herokuapp.com/)
+[Click here!](http://color-swatches-lg.herokuapp.com/)
 
 ## Running the app
 
 - `npm install`
 - `npm run start`
 
-ლ ( ◕ ᗜ ◕ ) ლ
+└╏ ･ ᗜ ･ ╏┐
