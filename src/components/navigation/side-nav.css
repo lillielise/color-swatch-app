@@ -7,7 +7,7 @@
 
 #side-nav-list {
   list-style-type: none;
-  margin-top: 30%;
+  margin-top: 25%;
 }
 
 #side-nav-list > * {
@@ -15,25 +15,20 @@
   margin-top: 5%;
 }
 
-#side-nav-list {
-  margin-top: 25%;
-}
-
 #side-nav-list > li:first-of-type {
   margin-top: 15%;
 }
 
-
 #random-color-button {
-  text-decoration: none;
-  padding: 15%;
-  font-weight: 550;
-  color: black;
-  border-style: solid;
   background-color: white; 
+  border-style: solid;
   border-width: 1px;
   border-radius: 5px;
+  color: black;
+  font-weight: 550;
   margin-bottom: 1px;
   margin-top: 2px;
+  padding: 15%;
   padding: 3% 18%;
+  text-decoration: none;
 }

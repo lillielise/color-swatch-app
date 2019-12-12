@@ -14,7 +14,7 @@ function DetailView(props) {
   }
 
   return (
-    <div id="detail-view-container">
+    <div className="detail-view-container">
       <ColorSwatch id="swatch-detail-view" detailsView={true} currentColors={selectedColor}/>
       <Link id="clear-button" to="/">Clear</Link>
     </div>
