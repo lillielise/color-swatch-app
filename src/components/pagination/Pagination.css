@@ -1,0 +1,19 @@
+#page-numbers {
+  list-style-type: none;
+  text-align: center;
+  width: 90%;
+}
+
+.page-number {
+  display: inline-block;
+  margin: 1%;
+}
+
+#current-page {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.page-number:hover {
+  cursor: pointer;
+}

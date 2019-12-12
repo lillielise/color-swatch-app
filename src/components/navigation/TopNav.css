@@ -1,0 +1,27 @@
+input {
+  float: right;
+}
+
+.top-nav {
+  background-color:#3c3c3c;
+  grid-row: 1;
+  grid-column: 1/3;
+}
+
+#logo {
+  margin: 1.5% 0 0 2%;
+}
+
+#search-button {
+  border-width: 1px;
+  border-radius: 5px;
+  font-size: 1.5vw;
+  height: 45%;
+  margin: 1.5% 1.5% 0 0;
+  padding-left: 1%;
+  width: 15%;
+}
+
+::placeholder {
+  font-family: 'Source Serif Pro', serif;
+}
