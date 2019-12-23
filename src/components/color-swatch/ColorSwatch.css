@@ -27,7 +27,7 @@
   margin-top: 1vh;
 }
 .color-display {
-  height: 30vh;
+  height: 90%;
   position: relative;
   width: 100%;
 }
@@ -40,7 +40,7 @@
 
 #swatch-detail-view {
   border-color: rgb(12, 12, 12);
-  /* font-size: 2.5vh; */
+  font-size: 4vh;
   height: 60vh;
   width: 70vw;
 }
