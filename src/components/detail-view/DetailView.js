@@ -4,6 +4,7 @@ import ColorSwatch from '../color-swatch/ColorSwatch'
 import './DetailView.css'
 
 function DetailView(props) {
+  console.log(props.location.state, 'hello this is my state')
   const selectedColor = props.location.state.comingFromSelected
     ? [props.location.state.colorSelected]
     : [selectRandomColor()]
