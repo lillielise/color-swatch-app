@@ -3,6 +3,7 @@
   box-shadow: 0 0 5px #5d5d5d;
   grid-column: 1;
   grid-row: 2/3;
+  min-height: calc(100vh - 12%);
 }
 
 #side-nav-list {
