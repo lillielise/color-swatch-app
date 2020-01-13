@@ -19,7 +19,7 @@ const SideNav = props => {
           to={{ pathname: '/details', state: { comingFromSelected: false } }}
           id="random-color-button"
         >
-          Red
+          Redd
         </Link>
         <li>Red</li>
         <li>Orange</li>
