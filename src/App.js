@@ -12,6 +12,7 @@ export const history = createHistory();
 function App() {
   const [colors] = useState(generateHexColors())
 
+
   return (
     <div id="main-container">
       <BrowserRouter>

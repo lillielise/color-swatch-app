@@ -1,24 +1,31 @@
 import React from 'react'
-import { useHistory } from "react-router"
-import { Redirect } from 'react-router-dom'
 import { ReactComponent as Logo } from '../../assets/logo-symbol.svg'
 import './TopNav.css'
 import {history} from '../../App'
 
 const TopNav = props => {
+  
+  function validateColor(color) {
+    let regex = /^#(?:[0-9a-fA-F]{6})$/;
+    return regex.test(color);
+  }
 
   function handleKeyPress(event) {
-    // let history = useHistory();
     if(event.key === 'Enter') {
       const color = event.target.value;
       console.log(color);
-      history.push({
-        pathname:'/details',
-        state: { 
-          comingFromSelected: true,
-          colorSelected: color, 
-        }
-    });
+
+      if(validateColor(color) === true) {
+        history.push({
+          pathname:'/details',
+          state: { 
+            comingFromSelected: true,
+            colorSelected: color, 
+          }
+        });
+      } else {
+        alert('Please Enter a Valid Hex Code example: #03badd')
+      }
       // props.histroy.push("/path")
       // return <Redirect to='/details' />
     }
@@ -29,7 +36,6 @@ const TopNav = props => {
   }
   return (
     <div className="top-nav">
-      <Logo id="logo" />
       <input id="search-button" type="text" placeholder="Search" onChange={handleChange} onKeyPress={handleKeyPress}></input>
     </div>
   )

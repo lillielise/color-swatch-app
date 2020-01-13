@@ -17,6 +17,7 @@ export default function generateHexColors() {
     'e',
     'f',
   ]
+  
   const colorsArray = []
   const numberOfColors = 100
   while (colorsArray.length < numberOfColors) {
