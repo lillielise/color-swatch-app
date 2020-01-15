@@ -16,19 +16,53 @@ const SideNav = props => {
           Random Color
         </Link>
         <Link
-          to={{ pathname: '/details', state: { comingFromSelected: false } }}
-          id="random-color-button"
+          to={{ pathname: '/', state: { comingFromFamilies: 'red' } }}
+          className="side-nav-button"
         >
-          Redd
+          Red
         </Link>
-        <li>Red</li>
-        <li>Orange</li>
-        <li>Yellow</li>
-        <li>Green</li>
-        <li>Blue</li>
-        <li>Purple</li>
-        <li>Brown</li>
-        <li>Gray</li>
+        <Link
+          to={{ pathname: '/', state: { comingFromFamilies: 'orange' } }}
+          className="side-nav-button"
+        >
+          Orange
+        </Link>
+        <Link
+          to={{ pathname: '/', state: { comingFromFamilies: 'yellow' } }}
+          className="side-nav-button"
+        >
+          Yellow
+        </Link>
+        <Link
+          to={{ pathname: '/', state: { comingFromFamilies: 'green' } }}
+          className="side-nav-button"
+        >
+          Green
+        </Link>
+        <Link
+          to={{ pathname: '/', state: { comingFromFamilies: 'blue' } }}
+          className="side-nav-button"
+        >
+          Blue
+        </Link>
+        <Link
+          to={{ pathname: '/', state: { comingFromFamilies: 'purple' } }}
+          className="side-nav-button"
+        >
+          Purple
+        </Link>
+        <Link
+          to={{ pathname: '/', state: { comingFromFamilies: 'brown' } }}
+          className="side-nav-button"
+        >
+          Brown
+        </Link>
+        <Link
+          to={{ pathname: '/', state: { comingFromFamilies: 'gray' } }}
+          className="side-nav-button"
+        >
+          Gray
+        </Link>
       </ul>
     </div>
   )

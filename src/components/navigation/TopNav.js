@@ -1,5 +1,4 @@
 import React from 'react'
-import { ReactComponent as Logo } from '../../assets/logo-symbol.svg'
 import './TopNav.css'
 import {history} from '../../App'
 

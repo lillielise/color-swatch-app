@@ -16,9 +16,9 @@
   margin-top: 5%;
 }
 
-#side-nav-list > li:first-of-type {
+/* #side-nav-list > li:first-of-type {
   margin-top: 15%;
-}
+} */
 
 #random-color-button {
   background-color: white;
@@ -31,4 +31,11 @@
   margin-top: 2px;
   padding: 1vh 1vw;
   text-decoration: none;
+}
+
+.side-nav-button {
+  text-decoration: none;
+  color: black;
+  margin-top: 10vh;
+  display: block;
 }
