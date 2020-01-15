@@ -3,16 +3,13 @@ import Pagination from '../pagination/Pagination'
 import ColorSwatch from '../color-swatch/ColorSwatch'
 
 function ListView(props) {
-
-  console.log(props.location.state.comingFromFamilies, props.colors)
-  
   const [currentPage, setCurrentPage] = useState(1)
   const [colorsPerPage] = useState(12)
   const indexOfLastPost = currentPage * colorsPerPage;
   const indexOfFirstPost = indexOfLastPost - colorsPerPage;
   let currentColors;
 
-  if(props.location.state.comingFromFamilies) {
+  if(props.location.state) {
     currentColors = ["#ff0000", "#ff0000", "#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000"];
   } else {
     currentColors = props.colors.slice(indexOfFirstPost, indexOfLastPost);
