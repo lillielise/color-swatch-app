@@ -3,6 +3,7 @@ import './Pagination.css'
 
 const Pagination = props => {
   const pageNumbers = []
+  console.log(props.colorsPerPage, props.totalColors)
   const pages = Math.ceil(props.totalColors / props.colorsPerPage)
   const [pageNumberSelected, setPageNumberSelected] = useState(1)
 
