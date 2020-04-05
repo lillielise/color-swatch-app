@@ -41,8 +41,10 @@
 #swatch-detail-view {
   border-color: rgb(12, 12, 12);
   font-size: 18px;
-  height: 400px;
-  width: 60vw;
+  height: 50vh;
+  min-height: 300px;
+  width: 50vw;
+  min-width: 300px;
 }
 
 #detail-view-container {
