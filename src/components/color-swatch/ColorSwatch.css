@@ -1,5 +1,6 @@
 .content-container {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   grid-row: 2;
   grid-column: 2;
@@ -15,17 +16,15 @@
   box-shadow: 0 0 3px darkgray;
   display: flex;
   flex-direction: column;
-  font-size: 1.2vw;
+  font-size: 18px;
+  color: #2a2a2a;
   margin: 2%;
   overflow: hidden;
   text-decoration: none;
-  height: 26vh;
-  width: 13vw;
+  height: 200px;
+  width: 200px;
 }
-.color-name {
-  color: black;
-  margin-top: 1vh;
-}
+
 .color-display {
   height: 90%;
   position: relative;
@@ -35,16 +34,26 @@
 .color-name {
   display: block;
   height: 5vh;
+  margin-top: 1vh;
   margin-left: 10%;
 }
 
 #swatch-detail-view {
   border-color: rgb(12, 12, 12);
-  font-size: 4vh;
-  height: 60vh;
-  width: 70vw;
+  font-size: 18px;
+  height: 50vh;
+  min-height: 300px;
+  width: 50vw;
+  min-width: 300px;
 }
 
 #detail-view-container {
   margin: auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .content-container {
+    grid-row: 3/4;
+    grid-column: 1;
+  }
 }
