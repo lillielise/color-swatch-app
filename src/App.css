@@ -5,7 +5,14 @@ body {
 
 #main-container {
   display: grid;
-  grid-template-columns: 20% auto;
-  grid-template-rows: 12% auto;
-  max-height: 100vh;
+  grid-template-columns: 250px auto;
+  grid-template-rows: 80px auto;
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 800px) {
+  #main-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
