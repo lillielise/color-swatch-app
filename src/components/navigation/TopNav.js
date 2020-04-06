@@ -9,6 +9,17 @@ const TopNav = props => {
     return regex.test(color)
   }
 
+  function handleChange(event) {
+    const searchValue = event.target.value
+    let newColors = []
+    props.originalColors.forEach(color => {
+      if (color.includes(searchValue)) {
+        newColors.push(color)
+      }
+    })
+    props.callback(newColors)
+  }
+
   function handleKeyPress(event) {
     if (event.key === 'Enter') {
       const color = event.target.value
@@ -30,9 +41,6 @@ const TopNav = props => {
     }
   }
 
-  function handleChange(event) {
-    console.log()
-  }
   return (
     <div className="top-nav">
       <h1>Color Swatches</h1>
