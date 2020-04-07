@@ -9,14 +9,16 @@ const TopNav = props => {
   }
 
   function handleChange(event) {
-    const searchValue = event.target.value
-    let newColors = []
-    props.originalHexColors.forEach(color => {
-      if (color.includes(searchValue)) {
-        newColors.push(color)
-      }
-    })
-    props.callback(newColors)
+    if (window.location.pathname !== '/details') {
+      const searchValue = event.target.value
+      let newColors = []
+      props.originalHexColors.forEach(color => {
+        if (color.includes(searchValue)) {
+          newColors.push(color)
+        }
+      })
+      props.callback(newColors)
+    }
   }
 
   function handleKeyPress(event) {
