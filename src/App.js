@@ -8,25 +8,34 @@ import generateHexColors from './util/generateHexColors'
 import './App.css'
 import createHistory from 'history/createBrowserHistory'
 export const history = createHistory()
-// import rootReducer from './store/reducers'
-// import { Provider } from 'react-redux'
-// import { createStore } from 'redux'
-// const store = createStore(rootReducer)
 
-function App() {
-  const [originalColors, setOriginalColors] = useState(generateHexColors())
-  const [colors, setColors] = useState(originalColors)
+function App(props) {
+  const generatedColors = generateHexColors()
+  const [originalHexColors] = useState(generatedColors[0])
+  const [originalColorObject] = useState(generatedColors[1])
+  const [colors, setColors] = useState(originalHexColors)
+
+  function resetOriginalColors() {
+    setColors(originalHexColors)
+  }
 
   function colorInput(newColors) {
     setColors(newColors)
+  }
+
+  if (props.comingFromClear) {
+    setColors(originalHexColors)
   }
 
   return (
     <div id="main-container">
       <BrowserRouter>
         <Router history={history}>
-          <TopNav callback={colorInput} originalColors={originalColors} />
-          <SideNav />
+          <TopNav callback={colorInput} originalHexColors={originalHexColors} />
+          <SideNav
+            callback={colorInput}
+            originalColorObject={originalColorObject}
+          />
           <Switch>
             <Route
               exact
@@ -36,7 +45,13 @@ function App() {
             <Route
               exact
               path="/details"
-              render={props => <DetailsView {...props} colors={colors} />}
+              render={props => (
+                <DetailsView
+                  {...props}
+                  callback={resetOriginalColors}
+                  colors={colors}
+                />
+              )}
             />
           </Switch>
         </Router>

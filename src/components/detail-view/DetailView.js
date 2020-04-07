@@ -4,7 +4,6 @@ import ColorSwatch from '../color-swatch/ColorSwatch'
 import './DetailView.css'
 
 function DetailView(props) {
-
   const selectedColor = props.location.state.comingFromSelected
     ? [props.location.state.colorSelected]
     : [selectRandomColor()]
@@ -21,7 +20,11 @@ function DetailView(props) {
         detailsView={true}
         currentColors={selectedColor}
       />
-      <Link id="clear-button" to="/">
+      <Link
+        id="clear-button"
+        onClick={() => props.callback()}
+        to={{ pathname: '/', state: { comingFromClear: true } }}
+      >
         Clear
       </Link>
     </div>

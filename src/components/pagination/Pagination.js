@@ -10,6 +10,16 @@ const Pagination = props => {
     pageNumbers.push(i + 1)
   }
 
+  if (pageNumbers.length && !pageNumbers.includes(pageNumberSelected)) {
+    setPageNumberSelected(1)
+    props.paginate(1)
+  }
+
+  if (pageNumbers.length && !pageNumbers.includes(pageNumberSelected)) {
+    setPageNumberSelected(1)
+    props.paginate(1)
+  }
+
   return (
     <nav>
       <ul id="page-numbers">

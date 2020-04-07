@@ -1,3 +1,5 @@
+import generateColorFamily from './generateColorFamily'
+
 export default function generateHexColors() {
   const possibleHexValues = [
     0,
@@ -17,18 +19,25 @@ export default function generateHexColors() {
     'e',
     'f',
   ]
-  
-  const colorsArray = []
-  const numberOfColors = 100
-  while (colorsArray.length < numberOfColors) {
+
+  const hexArray = []
+  const HSLObject = {}
+  const numberOfColors = 300
+  while (hexArray.length < numberOfColors) {
     let hexCode = '#'
     while (hexCode.length < 7) {
       hexCode +=
         possibleHexValues[Math.floor(Math.random() * possibleHexValues.length)]
     }
-    if (!colorsArray.includes(hexCode)) {
-      colorsArray.push(hexCode)
+    if (!hexArray.includes(hexCode)) {
+      hexArray.push(hexCode)
+      if (HSLObject[generateColorFamily(hexCode)]) {
+        HSLObject[generateColorFamily(hexCode)].push(hexCode)
+      } else if (generateColorFamily(hexCode) !== undefined) {
+        HSLObject[generateColorFamily(hexCode)] = [hexCode]
+      }
     }
   }
-  return colorsArray
+
+  return [hexArray, HSLObject]
 }
