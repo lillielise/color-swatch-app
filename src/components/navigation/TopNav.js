@@ -1,5 +1,4 @@
 import React from 'react'
-import { ReactComponent as Logo } from '../../assets/logo-symbol.svg'
 import './TopNav.css'
 import { history } from '../../App'
 
@@ -12,7 +11,7 @@ const TopNav = props => {
   function handleChange(event) {
     const searchValue = event.target.value
     let newColors = []
-    props.originalColors.forEach(color => {
+    props.originalHexColors.forEach(color => {
       if (color.includes(searchValue)) {
         newColors.push(color)
       }
@@ -23,7 +22,6 @@ const TopNav = props => {
   function handleKeyPress(event) {
     if (event.key === 'Enter') {
       const color = event.target.value
-      console.log(color)
 
       if (validateColor(color) === true) {
         history.push({
@@ -36,8 +34,6 @@ const TopNav = props => {
       } else {
         alert('Please Enter a Valid Hex Code example: #03badd')
       }
-      // props.histroy.push("/path")
-      // return <Redirect to='/details' />
     }
   }
 
