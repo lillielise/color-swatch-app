@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/color-swatch-app/static/css/main.efe16471.chunk.css",
+    "main.js": "/color-swatch-app/static/js/main.fc2de095.chunk.js",
+    "main.js.map": "/color-swatch-app/static/js/main.fc2de095.chunk.js.map",
+    "runtime-main.js": "/color-swatch-app/static/js/runtime-main.470a4222.js",
+    "runtime-main.js.map": "/color-swatch-app/static/js/runtime-main.470a4222.js.map",
+    "static/js/2.eea7c23b.chunk.js": "/color-swatch-app/static/js/2.eea7c23b.chunk.js",
+    "static/js/2.eea7c23b.chunk.js.map": "/color-swatch-app/static/js/2.eea7c23b.chunk.js.map",
+    "index.html": "/color-swatch-app/index.html",
+    "precache-manifest.403903f44f320460aa209e16e2ab8057.js": "/color-swatch-app/precache-manifest.403903f44f320460aa209e16e2ab8057.js",
+    "service-worker.js": "/color-swatch-app/service-worker.js",
+    "static/css/main.efe16471.chunk.css.map": "/color-swatch-app/static/css/main.efe16471.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.470a4222.js",
+    "static/js/2.eea7c23b.chunk.js",
+    "static/css/main.efe16471.chunk.css",
+    "static/js/main.fc2de095.chunk.js"
+  ]
+}
